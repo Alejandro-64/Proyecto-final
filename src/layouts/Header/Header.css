@@ -1,0 +1,132 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.header__container {
+    padding-block: var(--space-sm);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-desktop {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--space-lg);
+}
+
+.header__item-desktop {
+    font-size: var(--font-body);
+    font-weight: 400;
+    transition: color .3s ease;
+    
+    &:hover {
+        color: var(--color-links-hover);
+    }
+}
+
+.header__nav-responsive {
+    display: none;
+}
+
+.header__button-open {
+    display: none;
+}
+
+.header__logo {
+    width: 80px;
+    height: 80px;
+    aspect-ratio: 1 / 1;
+}
+
+.header__network {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-lg);
+}
+
+.header__network-link {
+    font-size: var(--font-body);
+    transition: color .3s ease;
+    
+    &:hover {
+        color: var(--color-links-hover);
+    }
+}
+
+@media screen and (max-width: 52.125rem) {
+    .header__nav-desktop {
+        display: none;
+    }
+
+    .header__nav-responsive {
+        position: fixed;
+        width: 75%;
+        height: 100dvh;
+        background-color: var(--color-bg-nav);
+        backdrop-filter: blur(1rem);
+        top: 0;
+        left: 0;
+        z-index: 10;
+        transform: translateX(-100%);
+        display: flex;
+        flex-direction: column;
+        padding-block: var(--space-lg);
+        padding-inline: var(--space-xl);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform .3s ease, opacity .3s ease;
+    }
+
+    .header__nav-responsive.isActive {
+        transform: translateX(0%);
+        opacity: 1;
+        pointer-events: initial;
+    }
+
+    .header__item-responsive {
+        font-size: var(--font-h2);
+        font-weight: 400;
+        margin-bottom: var(--space-md);
+        transition: color .3s ease;
+        
+        &:hover {
+            color: var(--color-links-hover);
+        }
+    }
+
+    .header__button-close {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: var(--space-xl);
+        font-size: 1.5rem;
+    }
+
+    .header__button-open {
+        display: block;
+        flex-basis: 100%;
+        font-size: 1.5rem;
+    }
+
+    .header__button-btn {
+        font-size: var(--font-h2);
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 26.875rem) {
+    .header__network {
+        display: none;
+    }
+
+    .header__nav-responsive {
+        width: 100%;
+        padding-inline: var(--space-md);
+    }
+}

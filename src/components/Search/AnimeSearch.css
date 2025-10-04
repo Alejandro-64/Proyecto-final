@@ -1,0 +1,30 @@
+.animeForm {
+    display: flex;
+    justify-content: center;
+    padding-block: var(--space-md);
+}
+
+.animeForm__input {
+    border: 2px solid var(--button);
+    width: 40%;
+    padding-block: var(--space-sm);
+    padding-inline: var(--space-md);
+    border-radius: var(--radius-s);
+}
+
+.animeForm__input:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--button-hover);
+}
+
+@media screen and (max-width: 834px) {
+    .animeForm__input {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 26.875rem) {
+    .animeForm__input {
+        width: 90%;
+    }
+}

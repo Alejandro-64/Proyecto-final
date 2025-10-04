@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+a,
+i {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+}
+
+::-moz-selection {
+  background-color: var(--border);
+  color: var(--color-text);
+}
+
+::selection {
+  background-color: var(--border);
+  color: var(--color-text);
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.5;
+  transition: background-color .3s ease, color .3s ease;
+}
+
+.container {
+  max-width: 93.75rem;
+  margin-inline: auto;
+}
+
+.main {
+  position: relative;
+}
+
+@media screen and (max-width: 93.75rem) {
+  .container {
+    padding-inline: 1rem;
+  }
+}
+
+@media screen and (max-width: 90rem) {
+  .container {
+    padding-inline: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 75rem) {
+  .container {
+    padding-inline: 1rem;
+  }
+}
+
+@media screen and (max-width: 52.125rem) {
+  .container {
+    padding-inline: 2rem;
+  }
+}
+
+@media screen and (max-width: 26.875rem) {
+  .container {
+    padding-inline: 1rem;
+  }
+}

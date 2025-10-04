@@ -1,0 +1,101 @@
+.bestAnimes {
+    width: 100%;
+}
+
+.bestAnimes__container {
+    padding-block: var(--padding-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.bestAnimes__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bestAnimes__title {
+    font-size: var(--font-h2);
+    font-weight: 600;
+}
+
+.bestAnimes__link {
+    font-size: var(--font-button);
+    color: var(--color-links);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    transition: color .3s ease, gap .3s ease;
+    
+    &:hover {
+        color: var(--color-links-hover);
+        gap: var(--space-md);
+    }
+}
+
+.bestAnimes__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    gap: var(--space-lg);
+}
+
+.bestAnimes__card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.bestAnimes__image {
+    aspect-ratio: 3 / 4;
+    width: 100%;
+    border-top: 1px solid var(--border);
+    border-inline: 1px solid var(--border);
+    border-top-left-radius: var(--radius-m);
+    border-top-right-radius: var(--radius-m);
+    overflow: hidden;
+    position: relative;
+}
+
+.bestAnimes__image-img {
+    width: 100%;
+    height: 100%;
+}
+
+.bestAnimes__image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: var(--gradient-hero);
+}
+
+.bestAnimes__name {
+    font-size: var(--font-body);
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 52.125rem) {
+    .bestAnimes__cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8.75rem, 1fr));
+        gap: var(--space-lg);
+    }
+
+    .bestAnimes__container {
+        gap: var(--space-xl);
+    }
+}
+
+@media screen and (max-width: 26.875rem) {
+    .bestAnimes__container {
+        gap: var(--space-xl);
+    }
+}

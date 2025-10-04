@@ -1,0 +1,16 @@
+.heroGeneric {
+    width: 100%;
+}
+
+.heroGeneric__container {
+    padding-top: var(--padding-2xl);
+}
+
+.heroGeneric__title {
+    background: var(--gradient-title);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: var(--font-display);
+    font-weight: 700;
+    text-align: center;
+}
