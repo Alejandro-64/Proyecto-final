@@ -29,8 +29,8 @@ Bienvenido a **AnimeVerse**, tu aplicación **frontend en React** para explorar 
 1️⃣ Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/animeverse-frontend.git
-cd animeverse-frontend
+git clone https://github.com/Alejandro-64/Proyecto-final.git
+cd Proyecto-final
 ```
 
 2️⃣ Instala dependencias:
