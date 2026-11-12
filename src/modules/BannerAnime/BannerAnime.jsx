@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import "./BannerAnime.css";
-import BannerImage from "../../assets/image/BannerBlog.webp"
+import { Link } from 'react-router-dom';
+import './BannerAnime.css';
+import BannerImage from '../../assets/image/BannerBlog.webp';
 
 const BannerAnime = () => {
   return (
@@ -12,8 +12,8 @@ const BannerAnime = () => {
               Want to dive deeper into anime?
             </h2>
             <p className="bannerAnime__paragraph">
-              Check out our blog for reviews, news, and fun facts about the
-              anime world.
+              Explore our blog for in-depth reviews, the latest news, and
+              curiosities from the world of anime.
             </p>
             <Link className="bannerAnime__link" to="/blog">
               Go to Blog <i className="bi bi-arrow-right"></i>
